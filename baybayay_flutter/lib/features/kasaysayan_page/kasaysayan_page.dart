@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class KasaysayanPage extends StatelessWidget {
-const KasaysayanPage({ super.key });
+class KasaysayanPageScreen extends StatelessWidget {
+const KasaysayanPageScreen({ super.key });
 
   @override
   Widget build(BuildContext context){
