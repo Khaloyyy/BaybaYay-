@@ -1,17 +1,41 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class Homepage extends StatelessWidget {
-const Homepage({ super.key });
+class HomePageScreen extends StatelessWidget {
+const HomePageScreen({ super.key });
 
   @override
   Widget build(BuildContext context){
     return Container(
       color: Colors.white,
-      child: Center(
+      child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Center(
         child: Text(
           'Home Page',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
+         
+        ),
+        SizedBox(width: 20),
+        ElevatedButton(
+          onPressed: () {
+            context.goNamed('SettingsScreen');
+            
+          },
+          child: Text('Go to Settings'),
+        ),
+        SizedBox(width: 20),
+        ElevatedButton(
+          onPressed: () {
+            context.goNamed('KasaysayanScreen');
+            
+          },
+          child: Text('Go to Kasaysayan'),
+        ),
+        SizedBox(width: 20),
+      ],
       ),
     );
   }
