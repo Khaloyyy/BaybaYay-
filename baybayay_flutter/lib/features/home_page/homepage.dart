@@ -21,7 +21,7 @@ const HomePageScreen({ super.key });
         SizedBox(width: 20),
         ElevatedButton(
           onPressed: () {
-            context.goNamed('SettingsScreen');
+            context.goNamed('settings');
             
           },
           child: Text('Go to Settings'),
@@ -29,7 +29,7 @@ const HomePageScreen({ super.key });
         SizedBox(width: 20),
         ElevatedButton(
           onPressed: () {
-            context.goNamed('KasaysayanScreen');
+            context.goNamed('kasaysayan');
             
           },
           child: Text('Go to Kasaysayan'),
